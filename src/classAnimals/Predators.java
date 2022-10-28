@@ -32,5 +32,16 @@ public class Predators extends Mammals {
     public void eatAnimals(String name) {
 
     }
+
+    @Override
+    public String toString() {
+        return "Predators{" +
+                "typeOfFloot='" + typeOfFloot + '\'' +
+                '}';
+    }
+
+    public void setTypeOfFloot(String typeOfFloot) {
+        this.typeOfFloot = typeOfFloot;
+    }
 }
 
