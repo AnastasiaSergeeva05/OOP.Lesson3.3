@@ -61,4 +61,12 @@ public class Mammals extends Animal {
     public void eatAnimals(String name) {
 
     }
+
+    @Override
+    public String toString() {
+        return "Mammals{" +
+                "livingEnvironment='" + livingEnvironment + '\'' +
+                ", interleavingRate=" + interleavingRate +
+                '}';
+    }
 }
