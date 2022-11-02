@@ -12,7 +12,7 @@ public class Mammals extends Animal {
         return Objects.hash(livingEnvironment, interleavingRate);
     }
 
-    public Mammals(String name, int year,int interleavingRate) {
+    public Mammals(String name, int year, int interleavingRate) {
         super(name, year);
 
         if (livingEnvironment == null) {
@@ -39,15 +39,6 @@ public class Mammals extends Animal {
 
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Mammals mammals = (Mammals) o;
-        return interleavingRate == mammals.interleavingRate && livingEnvironment.equals(mammals.livingEnvironment);
-    }
-
-
-    @Override
     public void goAnimals(String name) {
 
     }
@@ -60,6 +51,14 @@ public class Mammals extends Animal {
     @Override
     public void eatAnimals(String name) {
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Mammals mammals = (Mammals) o;
+        return interleavingRate == mammals.interleavingRate && livingEnvironment.equals(mammals.livingEnvironment);
     }
 
     @Override

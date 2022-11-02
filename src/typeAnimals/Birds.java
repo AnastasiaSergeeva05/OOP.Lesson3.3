@@ -44,12 +44,7 @@ public class Birds extends Animal {
 
     }
 
-    @Override
-    public String toString() {
-        return "Birds{" +
-                "livingEnvironment='" + livingEnvironment + '\'' +
-                '}';
-    }
+
 
     @Override
     public void eatAnimals(String name) {
@@ -68,5 +63,11 @@ public class Birds extends Animal {
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), livingEnvironment);
+    }
+    @Override
+    public String toString() {
+        return "Birds{" +
+                "livingEnvironment='" + livingEnvironment + '\'' +
+                '}';
     }
 }

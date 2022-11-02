@@ -35,13 +35,6 @@ public class Predators extends Mammals {
 
     }
 
-    @Override
-    public String toString() {
-        return "Predators{" +
-                "typeOfFloot='" + typeOfFloot + '\'' +
-                '}';
-    }
-
     public void setTypeOfFloot(String typeOfFloot) {
         this.typeOfFloot = typeOfFloot;
     }
@@ -58,6 +51,12 @@ public class Predators extends Mammals {
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), typeOfFloot);
+    }
+    @Override
+    public String toString() {
+        return "Predators{" +
+                "typeOfFloot='" + typeOfFloot + '\'' +
+                '}';
     }
 }
 
